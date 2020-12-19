@@ -1,4 +1,4 @@
-# random-password-generator# **Random Password Generator**
+# **Random Password Generator**
 
 The purpose of this project is to put our knowledge of Javascript to use. We are given a starter file and it's our job to get the password generator up and running while following the guidelines provided. I was able to complete this project with the use of arrays, conditional statements, and built-in Javascript methods. 
 
