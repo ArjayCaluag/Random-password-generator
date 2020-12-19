@@ -9,6 +9,8 @@ function writePassword() {
   var passwordText = document.querySelector('#password');
 
 
+
+
   passwordText.value = password;
 
 }
@@ -28,8 +30,28 @@ function generatePassword(){
           var shouldIncludeLower = confirm('Do you want password to contain lowercase characters?');
           var shouldIncludeUpper = confirm('Do you want password to contain uppercase characters?');
           var shouldIncludeNumbers = confirm('Do you want password to contain numbers?');
-          var shouldIncludeSpecial = confirm('Do you want password to contain special characters?'); 
-}
+          var shouldIncludeSpecial = confirm('Do you want password to contain special characters?');
 
-// Checking that our variables are logged properly
-console.log(generatePassword)
+          //empty array to concat userInput data to
+          var userInput = []
+
+          // concat() method used to combine arrays and returns a new array
+          //if user selects include lower case letters, add lowerCaseArry to new array
+          if (shouldIncludeLower = true) {
+          userInput = userInput.concat(lowerCaseArray);
+          }
+          //if user selects upper case letters, add upperCaseArry to new array
+          if (shouldIncludeUpper = true) {
+          userInput = userInput.concat(upperCaseArray);
+          } 
+          //if user selects include lower case numbers, add numbersArray to new array
+          if (shouldIncludeNumbers = true) {
+          userInput = userInput.concat(numberArray);
+          }
+          //if user selects include special case characters, add specialCharacterArray to new array
+          if (shouldIncludeSpecial = true) {
+          userInput = userInput.concat(specialCharacterArray);
+          }    
+          // logs all possible options based off of userinput
+          console.log(userInput);
+        }        
